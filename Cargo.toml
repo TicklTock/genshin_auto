@@ -1,0 +1,21 @@
+[package]
+name = "genshin_auto"
+authors = ["ticktock"]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+build = "build.rs"
+
+[build-dependencies]
+embed-resource = "3.0.2"
+
+[dependencies]
+env_logger = "0.11.8"
+image = "0.25.6"
+log = "0.4.27"
+notify-rust = "4.11.6"
+rodio = "0.20.1"
+windows = { version = "0.61.1", features = ["Win32_UI_Input_KeyboardAndMouse", "Win32_UI_WindowsAndMessaging", "Win32_Foundation"] }
+windows-hotkeys = "0.2.1"
+xcap = "0.4.1"
